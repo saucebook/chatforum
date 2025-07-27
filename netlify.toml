@@ -1,0 +1,22 @@
+[build]
+  functions = "netlify/functions"
+  publish = "."
+  command = "npm install"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[functions]
+  node_bundler = "esbuild"
+  external_node_modules = ["openai", "uuid"]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+

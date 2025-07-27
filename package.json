@@ -1,0 +1,21 @@
+{
+  "name": "ai-forum-netlify",
+  "version": "1.0.0",
+  "description": "AI Forum deployed on Netlify with serverless functions",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Build complete'",
+    "postinstall": "echo 'Dependencies installed'"
+  },
+  "dependencies": {
+    "openai": "^4.20.0",
+    "uuid": "^9.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": ["ai", "forum", "netlify", "serverless"],
+  "author": "AI Forum",
+  "license": "MIT"
+}
+
